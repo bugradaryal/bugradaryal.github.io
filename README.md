@@ -1,18 +1,43 @@
-# React + Vite
+# Buğra Daryal — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal portfolio site built with React + Vite. Showcases my background,
+work experience, skills, and contact info.
 
-Currently, two official plugins are available:
+🔗 **Live site:** [bugradaryal.github.io](https://bugradaryal.github.io/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- React
+- Vite
+- React Router
+- Plain CSS (custom, no framework)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Pages
 
-Note: This will impact Vite dev & build performances.
+- **Home** — intro, skills, education
+- **Experience** — internships & work history
+- **Projects** — selected work (in progress)
+- **Contact** — ways to reach me
+- **CV** — downloadable resume (PDF)
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm install
+npm run dev
+```
+
+## Build & Deploy
+
+```bash
+npm run build
+npm run deploy
+```
+
+Deploys the `dist/` folder to the `gh-pages` branch via [gh-pages](https://www.npmjs.com/package/gh-pages).
+
+## Contact
+
+- Email: bugradaryal0@gmail.com
+- GitHub: [@bugradaryal](https://github.com/bugradaryal)
+- LinkedIn: [buğra-daryal](https://linkedin.com/in/buğra-daryal)
