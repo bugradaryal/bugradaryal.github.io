@@ -1,0 +1,49 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.25fr 0.9fr;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 3.5rem 0 2rem;
+}
+@media (max-width: 780px) {
+  .hero { grid-template-columns: 1fr; padding-top: 2rem; }
+}
+.hero h1 { font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.15; }
+.hero .role {
+  color: var(--amber);
+  font-family: var(--mono);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.hero p.desc { color: var(--muted); max-width: 52ch; margin-bottom: 1.8rem; }
+
+.profile-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px -20px rgba(0,0,0,0.6);
+}
+.profile-card img {
+  width: 100%;
+  display: block;
+  filter: grayscale(15%) contrast(1.02);
+}
+.profile-card .meta {
+  padding: 0.85rem 0.9rem;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+}
+.profile-card .meta .live { color: var(--accent); }
+
+.edu-grid { grid-template-columns: 1.3fr 1fr; }
+.edu-title { font-family: var(--mono); font-size: 0.95rem; margin: 0 0 0.3rem; }
+.edu-sub { color: var(--muted); margin: 0 0 0.2rem; }
+.edu-meta { color: var(--muted); margin: 0; font-family: var(--mono); font-size: 0.82rem; }
+
+.columngrid{
+  grid-column: span 2;
+}

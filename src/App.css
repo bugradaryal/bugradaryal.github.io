@@ -1,0 +1,104 @@
+.statusbar {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  background: #070a0e;
+  border-bottom: 1px solid var(--border);
+  padding: 0.4rem 1rem;
+  flex-wrap: wrap;
+}
+.statusbar .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+  display: inline-block;
+  margin-right: 0.4rem;
+  box-shadow: 0 0 6px var(--accent);
+  animation: pulse 2.2s ease-in-out infinite;
+}
+
+header.site {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+  background: rgba(10,13,18,0.85);
+  border-bottom: 1px solid var(--border);
+}
+.nav {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+.logo {
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.logo .prompt { color: var(--accent); }
+.logo .cursor {
+  display: inline-block;
+  width: 7px; height: 1em;
+  background: var(--accent);
+  margin-left: 2px;
+  animation: blink 1.1s steps(2) infinite;
+  vertical-align: -2px;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+.navlinks {
+  display: flex;
+  gap: 0.4rem;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  list-style: none;
+  margin: 0; padding: 0;
+  flex-wrap: wrap;
+}
+.navlinks .Link {
+  text-decoration: none;
+  color: var(--muted);
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  transition: color .15s ease, background .15s ease;
+}
+.navlinks .Link:hover { color: var(--text); background: var(--surface-2); }
+.navlinks .Link.active { color: var(--accent); background: rgba(94,234,212,0.08); }
+.navlinks .Link.cta {
+  color: #08110f;
+  background: var(--accent);
+  font-weight: 600;
+}
+.navlinks .Link.cta:hover { background: #7ff2df; color: #08110f; }
+
+footer.site {
+  border-top: 1px solid var(--border);
+  padding: 2rem 1.5rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.footer-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.footer-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+.footer-links a { text-decoration: none; color: var(--muted); }
+.footer-links a:hover { color: var(--accent); }
+
+@media (max-width: 600px) {
+  .nav { flex-direction: column; align-items: flex-start; gap: 0.7rem; }
+}
