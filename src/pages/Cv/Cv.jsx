@@ -11,7 +11,7 @@ export default function Cv() {
             Full resume — experience, skills, education and certificates. View it below or download the PDF.
           </p>
         </div>
-        <a className="btn btn-primary" href="/assets/bugra-daryal-cv.pdf" download>Download PDF ↓</a>
+        <a className="btn btn-primary" href={cvPdf} download>Download PDF ↓</a>
       </div>
 
       <div className="cv-embed">
