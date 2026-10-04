@@ -6,10 +6,6 @@ export default function Experience() {
       <div className="page-head">
         <span className="eyebrow">work history</span>
         <h1>Experience</h1>
-        <p className="lede">
-          Internships focused on backend architecture, authentication and infrastructure — building REST APIs
-          the way I'd want to maintain them.
-        </p>
       </div>
 
       <section>
