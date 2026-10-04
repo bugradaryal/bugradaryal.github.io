@@ -40,7 +40,7 @@ function App() {
     </main>
     <footer className="site">
       <div className="footer-inner">
-        <span>© 2026 Buğra Daryal</span>
+        <span>© 2026 Buğra Daryal - Tüm hakları saklıdır.</span>
         <div className="footer-links">
           <a href="mailto:bugradaryal0@gmail.com">Email</a>
           <a href="https://github.com/bugradaryal" target="_blank" rel="noopener">GitHub</a>

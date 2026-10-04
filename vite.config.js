@@ -10,6 +10,8 @@ export default defineConfig({
   ],
   base: '/',
   server: {
-    open: true
+    open: true,
+    host: true,
+    allowedHosts: ['bugradaryal.com']
   }
 })
