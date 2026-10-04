@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import DocumentModal from "./DocumentModal";
+import DocumentModal from "./DocumentModal.jsx";
 
 export default function EduCard({ item }) {
   const [isOpen, setIsOpen] = useState(false);
